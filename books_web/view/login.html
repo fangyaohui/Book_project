@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>螺丝书城登录界面</title>
+    <link href="../css/login.css" rel="stylesheet" type="text/css">
+</head>
+    <script type="text/javascript">
+        function yanzheng(){
+            var im=document.getElementsByTagName("img");
+            im[0].src="../php/common/captcha.php";
+        }
+    </script>
+<body>
+<div class="container">
+    <div class="login-wrapper">
+        <div class="header">Login</div>
+        <div class="form-wrapper">
+            <form action="../php/login.php" method="post">
+                <input type="text" name="username" placeholder="用户名" class="input-item">
+                <input type="password" name="password" placeholder="密码" class="input-item">
+                <div class="div-allinline">
+                    <div class="subdiv-allinline">
+                        <input type="text" name="captcha" placeholder="验证码" class="input-item1 ">
+                    </div>
+                    <div class="subdiv-allinline">
+                        <img src="../php/common/captcha.php" width="120px" onclick="yanzheng()";>
+                    </div>
+                </div>
+                <input type="submit" value="登录" class="submit">
+            </form>
+<!--            <div class="btn">Login</div>-->
+        </div>
+        <div class="msg">
+            忘记密码?
+            <a href="#">找回密码</a><br>
+            没有注册?
+            <a href="register.html">点击注册</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

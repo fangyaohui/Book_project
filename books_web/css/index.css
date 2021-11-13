@@ -1,0 +1,82 @@
+.div-allinline{
+    text-align:center;
+    margin:0 auto;
+    padding:0;
+    clear:both;
+}
+.subdiv-allinline{
+    margin:0;
+    padding:0;
+    display:inline-block;
+    _display:inline;
+    *display:inline;
+    zoom:1;
+}
+
+#searchinput{
+    width: 340px;
+    padding: 0 25px;
+    height: 48px;
+    border: 1px solid #f2f2f2;
+    background: #f6f6f6;
+    color: #202124;
+    font-size: 14px;
+    line-height: 48px;
+    border-radius: 25px;
+}
+input[type="submit"] {
+    -moz-user-select: none;
+    background-color: #F5F5F5;
+
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    color: #666666;
+    cursor: default;
+
+    font-size: 15px;
+    font-weight: bold;
+    height: 40px;
+    line-height: 30px;
+    margin: 11px 6px;
+    min-width: 54px;
+    padding: 0 8px;
+    text-align: center;
+}
+ul li{
+    display: block;
+    float: left;
+    padding: 10px;
+    font-size: 15px;
+}
+ol li{
+    display: block;
+    padding: 10px;
+    font-size: 17px;
+    align-content: center;
+}
+a {
+    color: blue;
+    cursor: pointer;     /* 鼠标样式*/
+    text-decoration:none;
+}
+a:link { color: #999; text-decoration: none; }/* 未访问的链接 */
+a:visited { color: #999; text-decoration: line-through; } /* 已访问的链接 */
+a:hover { color: #F00; text-decoration: none; }/* 鼠标移动到链接上 */
+a:active { color: #F0F; } /* 选定的链接 */
+
+#fenlei{
+    width: 25%;
+    background: #202124;
+}
+#neirong{
+    width: 500px;
+    background: #FF0000;
+    height: 600px;
+    transform: translateY(-40%);
+}
+#gonggao{
+    width: 400px;
+    background: #666666;
+    height: 300px;
+    transform: translateY(-80%);
+}
